@@ -6,7 +6,16 @@ stages {
 stage ("print variable") {
 steps { 
 echo "My Name is ${MyName}"
-}
-}
-}
+    }
+   }
+  }
+  stages 
+  stages ("build") {
+  steps {
+  git url: 'https://github.com/rajeshgitnew/jenkins1' , branch: 'Main'
+  sh "chmod +R ./jenkins"
+  sh "./jenkins1/helloworld.sh"
+   }
+  } 
+ }
 }
