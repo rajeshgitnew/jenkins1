@@ -1,8 +1,5 @@
-// Define Variable
 def MyName = "Rajesh"
 
-
-// Print Variable
 pipeline {
 agent any 
 stages {
