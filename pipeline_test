@@ -8,8 +8,7 @@ steps {
 echo "My Name is ${MyName}"
     }
    }
-  }
-stage ('build') {
+stage ("build") {
 steps {
 git url: 'https://github.com/rajeshgitnew/jenkins1', branch: 'Main'
 sh "chmod +x -R ./helloworld.sh"
@@ -17,3 +16,4 @@ sh "./helloworld.sh"
    }
   }
  }
+}
