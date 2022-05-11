@@ -8,7 +8,7 @@ agent any
 stages {
 stage {"print variable"} {
 steps { 
-echo "My Name is ${MyName}
+echo "My Name is ${MyName}"
 }
 }
 }
