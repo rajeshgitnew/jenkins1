@@ -3,7 +3,7 @@ def MyName = "Rajesh"
 pipeline {
 agent any 
 stages {
-stage {"print variable"} {
+stage ("print variable") {
 steps { 
 echo "My Name is ${MyName}"
 }
